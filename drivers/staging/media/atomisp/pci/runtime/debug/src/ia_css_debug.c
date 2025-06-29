@@ -791,7 +791,7 @@ for (t = 0; t < SH_CSS_SP_DBG_NR_OF_TRACES; t++) {
 
 #elif SP_DEBUG == SP_DEBUG_MINIMAL
 int i;
-int base = 0;
+int base;
 int limit = SH_CSS_NUM_SP_DEBUG;
 int step = 1;
 
