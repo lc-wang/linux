@@ -30,8 +30,8 @@ const struct ia_css_fc_config default_fc_config = {
 	(1 << (ISP_VEC_ELEMBITS - 2)), /* 0.5 */
 	(1 << (ISP_VEC_ELEMBITS - 1)) - 1, /* 1 */
 	(1 << (ISP_VEC_ELEMBITS - 1)) - 1, /* 1 */
-	(int16_t) - (1 << (ISP_VEC_ELEMBITS - 1)), /* -1 */
-	(int16_t) - (1 << (ISP_VEC_ELEMBITS - 1)), /* -1 */
+	(int16_t) -(1 << (ISP_VEC_ELEMBITS - 1)), /* -1 */
+	(int16_t) -(1 << (ISP_VEC_ELEMBITS - 1)), /* -1 */
 };
 
 void ia_css_ynr_encode(struct sh_css_isp_yee2_params *to,
