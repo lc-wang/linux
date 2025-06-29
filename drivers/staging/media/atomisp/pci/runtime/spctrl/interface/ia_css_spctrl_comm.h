@@ -31,9 +31,9 @@ struct ia_css_sp_init_dmem_cfg {
 	sp_ID_t sp_id; /* <sp Id */
 };
 
-#define SIZE_OF_IA_CSS_SP_INIT_DMEM_CFG_STRUCT              \
+#define SIZE_OF_IA_CSS_SP_INIT_DMEM_CFG_STRUCT              ( \
 	(1 * SIZE_OF_IA_CSS_PTR) + (4 * sizeof(uint32_t)) + \
-		(1 * sizeof(sp_ID_t))
+		(1 * sizeof(sp_ID_t)))
 
 static_assert(sizeof(struct ia_css_sp_init_dmem_cfg) ==
 	      SIZE_OF_IA_CSS_SP_INIT_DMEM_CFG_STRUCT);

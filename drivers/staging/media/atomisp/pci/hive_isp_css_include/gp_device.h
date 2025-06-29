@@ -29,8 +29,8 @@
 #define STORAGE_CLASS_GP_DEVICE_C
 #include "gp_device_public.h"
 #else /* __INLINE_GP_DEVICE__ */
-#define STORAGE_CLASS_GP_DEVICE_H static inline
-#define STORAGE_CLASS_GP_DEVICE_C static inline
+#define STORAGE_CLASS_GP_DEVICE_H (static inline)
+#define STORAGE_CLASS_GP_DEVICE_C (static inline)
 #include "gp_device_private.h"
 #endif /* __INLINE_GP_DEVICE__ */
 

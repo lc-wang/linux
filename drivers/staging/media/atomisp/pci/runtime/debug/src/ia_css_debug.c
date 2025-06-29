@@ -847,11 +847,11 @@ void ia_css_debug_wake_up_sp(void)
 	sp_ctrl_setbit(SP0_ID, SP_SC_REG, SP_START_BIT);
 }
 
-#define FIND_DMEM_PARAMS_TYPE(stream, kernel, type)                      \
+#define FIND_DMEM_PARAMS_TYPE(stream, kernel, type)                      ( \
 	(struct CONCATENATE(CONCATENATE(sh_css_isp_, type), _params) *)  \
 		findf_dmem_params(stream,                                \
 				  offsetof(struct ia_css_memory_offsets, \
-					   dmem.kernel))
+					   dmem.kernel)))
 
 #define FIND_DMEM_PARAMS(stream, kernel) \
 	FIND_DMEM_PARAMS_TYPE(stream, kernel, kernel)

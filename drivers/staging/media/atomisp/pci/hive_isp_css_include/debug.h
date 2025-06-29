@@ -30,8 +30,8 @@
 #define STORAGE_CLASS_DEBUG_C
 #include "debug_public.h"
 #else /* __INLINE_DEBUG__ */
-#define STORAGE_CLASS_DEBUG_H static inline
-#define STORAGE_CLASS_DEBUG_C static inline
+#define STORAGE_CLASS_DEBUG_H (static inline)
+#define STORAGE_CLASS_DEBUG_C (static inline)
 #include "debug_private.h"
 #endif /* __INLINE_DEBUG__ */
 

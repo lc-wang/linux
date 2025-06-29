@@ -30,8 +30,8 @@
 #define STORAGE_CLASS_STREAM2MMIO_C
 #include "isys_stream2mmio_public.h"
 #else /* __INLINE_STREAM2MMIO__ */
-#define STORAGE_CLASS_STREAM2MMIO_H static inline
-#define STORAGE_CLASS_STREAM2MMIO_C static inline
+#define STORAGE_CLASS_STREAM2MMIO_H (static inline)
+#define STORAGE_CLASS_STREAM2MMIO_C (static inline)
 #include "isys_stream2mmio_private.h"
 #endif /* __INLINE_STREAM2MMIO__ */
 

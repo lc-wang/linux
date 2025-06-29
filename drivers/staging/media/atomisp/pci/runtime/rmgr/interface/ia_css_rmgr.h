@@ -13,8 +13,8 @@
 #define STORAGE_CLASS_RMGR_H extern
 #define STORAGE_CLASS_RMGR_C
 #else /* __INLINE_RMGR__ */
-#define STORAGE_CLASS_RMGR_H static inline
-#define STORAGE_CLASS_RMGR_C static inline
+#define STORAGE_CLASS_RMGR_H (static inline)
+#define STORAGE_CLASS_RMGR_C (static inline)
 #endif /* __INLINE_RMGR__ */
 
 /**

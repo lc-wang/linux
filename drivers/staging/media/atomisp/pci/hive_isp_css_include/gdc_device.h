@@ -31,8 +31,8 @@
 #define STORAGE_CLASS_GDC_C
 #include "gdc_public.h"
 #else /* __INLINE_GDC__ */
-#define STORAGE_CLASS_GDC_H static inline
-#define STORAGE_CLASS_GDC_C static inline
+#define STORAGE_CLASS_GDC_H (static inline)
+#define STORAGE_CLASS_GDC_C (static inline)
 #include "gdc_private.h"
 #endif /* __INLINE_GDC__ */
 

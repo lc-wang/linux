@@ -16,7 +16,7 @@
 #include "assert_support.h"
 
 #ifndef __INLINE_FIFO_MONITOR__
-#define STORAGE_CLASS_FIFO_MONITOR_DATA static const
+#define STORAGE_CLASS_FIFO_MONITOR_DATA (static const)
 #else
 #define STORAGE_CLASS_FIFO_MONITOR_DATA const
 #endif /* __INLINE_FIFO_MONITOR__ */

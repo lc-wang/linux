@@ -29,8 +29,8 @@
 #define STORAGE_CLASS_GP_TIMER_C
 #include "gp_timer_public.h" /* functions*/
 #else /* __INLINE_GP_TIMER__ */
-#define STORAGE_CLASS_GP_TIMER_H static inline
-#define STORAGE_CLASS_GP_TIMER_C static inline
+#define STORAGE_CLASS_GP_TIMER_H (static inline)
+#define STORAGE_CLASS_GP_TIMER_C (static inline)
 #include "gp_timer_private.h" /* inline functions*/
 #endif /* __INLINE_GP_TIMER__ */
 

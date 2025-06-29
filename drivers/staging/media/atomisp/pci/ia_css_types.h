@@ -351,7 +351,7 @@ struct ia_css_shading_info {
 };
 
 /* Default Shading Correction information of Shading Correction Type 1. */
-#define DEFAULT_SHADING_INFO_TYPE_1                         \
+#define DEFAULT_SHADING_INFO_TYPE_1                         ( \
 	(struct ia_css_shading_info)                        \
 	{                                                   \
 		.type = IA_CSS_SHADING_CORRECTION_TYPE_1, \
@@ -363,7 +363,7 @@ struct ia_css_shading_info {
 			.bayer_scale_ver_ratio_out	= 1, \
 		} \
 	} \
-	}
+	})
 
 /* Default Shading Correction information. */
 #define DEFAULT_SHADING_INFO DEFAULT_SHADING_INFO_TYPE_1
