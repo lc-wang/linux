@@ -28,7 +28,7 @@
 #define STORAGE_CLASS_VMEM_H extern
 #define STORAGE_CLASS_VMEM_C
 #include "vmem_public.h"
-#else  /* __INLINE_VMEM__ */
+#else /* __INLINE_VMEM__ */
 #define STORAGE_CLASS_VMEM_H static inline
 #define STORAGE_CLASS_VMEM_C static inline
 #include "vmem_private.h"

@@ -28,7 +28,7 @@
 #define STORAGE_CLASS_INPUT_FORMATTER_H extern
 #define STORAGE_CLASS_INPUT_FORMATTER_C
 #include "input_formatter_public.h"
-#else  /* __INLINE_INPUT_FORMATTER__ */
+#else /* __INLINE_INPUT_FORMATTER__ */
 #define STORAGE_CLASS_INPUT_FORMATTER_H static inline
 #define STORAGE_CLASS_INPUT_FORMATTER_C static inline
 #include "input_formatter_private.h"

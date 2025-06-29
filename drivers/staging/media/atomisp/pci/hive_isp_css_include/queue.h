@@ -28,7 +28,7 @@
 #define STORAGE_CLASS_QUEUE_C
 /* #include "queue_public.h" */
 #include "ia_css_queue.h"
-#else  /* __INLINE_QUEUE__ */
+#else /* __INLINE_QUEUE__ */
 #define STORAGE_CLASS_QUEUE_H static inline
 #define STORAGE_CLASS_QUEUE_C static inline
 #include "queue_private.h"

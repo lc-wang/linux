@@ -28,7 +28,7 @@
 #define STORAGE_CLASS_EVENT_H extern
 #define STORAGE_CLASS_EVENT_C
 #include "event_fifo_public.h"
-#else  /* __INLINE_EVENT__ */
+#else /* __INLINE_EVENT__ */
 #define STORAGE_CLASS_EVENT_H static inline
 #define STORAGE_CLASS_EVENT_C static inline
 #include "event_fifo_private.h"
